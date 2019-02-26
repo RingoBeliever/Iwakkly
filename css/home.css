@@ -1,0 +1,204 @@
+* {
+	margin:0; padding:0; 		/*全要素のマージン・パディングをリセット*/
+	outline: none;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	/* min-width: 1300px; */
+}
+
+header {
+	vertical-align:middle;
+	/* line-height: 30px; */
+	text-align: right;
+	/* text-align: center; */
+	background-color: #3cb371;
+	min-width: 1200px;
+}
+
+header nav ul li{
+	line-height: 40px;
+	height: 40px;
+	margin-top: 0;
+	cursor: pointer;
+	/* font-size: 20px; */
+}
+
+li#SignUp a:hover {
+	color: #ffff00;
+}
+
+header nav ul li a:hover {
+	color: #808080;
+}
+
+header p a {
+	color: #fff;
+	font-weight: bold;
+	font-size: 25px;
+	text-decoration: none;
+	position: absolute;
+	left: 20px;
+	cursor: pointer;
+}
+
+/* li#signUp a:hover {
+	color: #ffff00;
+} */
+
+header p a:hover {
+	color: #808080;
+}
+
+/* li#signUp a:hover {
+	color: #ff4f02;
+} */
+
+nav ul li {
+	border-left: 2px #fff solid;
+	/* height: 60px; */
+	text-align: center;
+	width: 210px;
+	display: inline-block;
+	/* padding-top: 10px; */
+	/* margin-right: 25px; */
+
+}
+
+nav ul li a {
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	/* font-size: 20px; */
+}
+
+#Iwakkly p {
+	/* font-size: 300px; */
+	/* text-align: center; */
+}
+
+#SignUpUserName {
+	-webkit-appearance: none;
+	display: inline-block;
+	margin-right: 0;
+	padding: 10px;
+	width: 180px;
+	height: 40px;
+	font-size: 17px;
+	box-sizing: border-box;
+	border: 1px solid #1e90ff;
+}
+
+#SignUpPassword {
+	-webkit-appearance: none;
+	display: inline-block;
+	margin-right: 0;
+	padding: 10px;
+	width: 180px;
+	height: 40px;
+	font-size: 17px;
+	box-sizing: border-box;
+	border: 1px solid #1e90ff;
+}
+
+#LoginUserName {
+	-webkit-appearance: none;
+	display: inline-block;
+	margin-right: 0;
+	padding: 10px;
+	width: 180px;
+	height: 40px;
+	font-size: 17px;
+	box-sizing: border-box;
+	border: 1px solid #1e90ff;
+}
+
+#LoginPassword {
+	-webkit-appearance: none;
+	display: inline-block;
+	margin-right: 0;
+	padding: 10px;
+	width: 180px;
+	height: 40px;
+	font-size: 17px;
+	box-sizing: border-box;
+	border: 1px solid #1e90ff;
+}
+
+#LoginSignUp {
+	-webkit-appearance: none;
+	display: inline-block;
+	color: #fff;
+	/* width: 100px; */
+	height: 40px;
+	font-size: 17px;
+	vertical-align: top;
+	border: none;
+	border-radius: 5px 5px 5px 5px;
+	background: #1e90ff;
+}
+
+#LoginSignUp:hover{
+	background: #00bfff;
+}
+
+.akaunt {
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	font-size: 17px;
+	background-color: #3cb371;
+	border: none;
+	border-left: 2px #fff solid;
+	height:39px;
+	width: 170px;
+	cursor: pointer;
+}
+
+.ui-dialog-titlebar {
+	color: white;
+	background: #3cb371;
+}
+
+@media screen and (max-height: 900px) {
+	header {
+		height: 30px;
+	}
+header nav ul li{
+	line-height: 30px;
+	height: 30px;
+}
+nav ul li a {
+	font-size: 16px;
+}
+header p a {
+	font-size: 20px;
+}
+.akaunt {
+	font-size: 16px;
+	height:28px;
+}
+}
+
+@media screen and (max-height: 750px) {
+	header {
+		height: 25px;
+	}
+header nav ul li{
+	line-height: 25px;
+	height: 25px;
+}
+nav ul li a {
+	font-size: 12px;
+}
+header p a {
+	font-size: 16px;
+}
+.akaunt {
+	font-size: 12px;
+	height:21px;
+}
+}

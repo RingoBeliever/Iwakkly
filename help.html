@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="css/help.css">
+  <title>Iwakkly遊び方</title>
+</head>
+<body style="margin-left: 100px; min-width: 1200px;">
+  <h1 style="color: green">ゲームの遊び方</h1>
+  <h1>動作環境</h1>
+				<table style="border: 1px solid;">
+					<thead>
+						<tr>
+							<th colspan="2" style="border: 1px solid;">プラットフォーム</th>
+							<th style="border: 1px solid;">Webブラウザー</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th rowspan="2" style="width: 25%; border: 1px solid;">パソコン</th>
+							<th style="width: 15%; border: 1px solid;">Windows</th>
+							<td style="border: 1px solid; text-align: center;">
+							Microsoft Edge<br>
+							Mozilla Firefox<br>
+							Google Chrome</td>
+						</tr>
+						<tr>
+							<th style="border: 1px solid;">macOS</th>
+							<td style="border: 1px solid; text-align: center;">Safari<br>
+							Mozilla Firefox</td>
+						</tr>
+						<tr>
+							<th rowspan="2" style="border: 1px solid;">スマートフォン・タブレット</th>
+							<th style="border: 1px solid;">iPhone / iPad</th>
+							<td style="border: 1px solid; text-align: center;">
+								非対応</td>
+						</tr>
+						<tr>
+							<th style="border: 1px solid;">Android</th>
+							<td style="border: 1px solid; text-align: center;">非対応</td>
+						</tr>
+					</tbody>
+				</table>
+        Iwakkly Ver1.1(2019年2/4～現在)<br>
+        保存、ダウンロード機能の修正、機能追加を行いました。
+  <h1>ゲーム画面</h1>
+  <img src="picture/playMode.png" alt="プレイモード" style="border: 1px solid #c4c4c4; width: 1000px;"><br><br>
+  <img src="picture/playdisplay.png" alt="クリエイトモード" style="border: 1px solid #c4c4c4; width: 1000px">
+
+  <h1>目的</h1>
+  ブロックで、<font color="red">キャラクター</font>に命令をして、各ステージのはたを全て取って、ゲームクリアしよう！<br>
+  作ったステージを共有してみよう！<br>
+  ともだちが作ったステージにチャレンジしてみよう！
+
+  <h1>遊び方</h1>
+  <p>このゲームは、プレイモードとクリエイトモードの2種類で構成されているよ。</p>
+  <hr>
+  <h3>プレイモード</h3>
+  <p>ブロックを組み合わせて<font color="red">キャラクター</font>を動かして、全てのはたを取るモードだよ。<p>
+    <hr>
+  <h3>クリエイトモード</h3>
+  <p>ステージを作成することができるよ。<br>
+  ステージ上のマスをクリックすることで、そのマスにアイテムせんたくボックスからえらんだアイテムを置けるよ。<br>
+  作成したステージをほぞんしたり共有することもできるよ。<br></p>
+  <hr>
+  <p>①ステージ1から始めてみよう。ステージが進むにつれてむずかしくなるよ。<br>
+     　ボタンやボックスなどの動作は、<a href="#partsDescription">部品説明</a>を見てね。</p>
+
+  <p>②<font color="lime">命令ブロック</font>は、<font color="blue">ワークスペース</font>にドラッグ＆ドロップしてならべよう。<br>
+      　いらなくなったブロックは、<font color="#b86600">ゴミ箱</font>か<font color="#ffa500">ブロックエリア</font>に<br>
+      　ドラッグ＆ドロップすると、ブロックを捨てることができるよ<br>
+     　<font color="lime">命令ブロック</font>の動きは、<a href="#blockDescription">ブロック説明</a>を見てね。</p>
+
+  <p>③ブロックを並べたら、実行ボタンをクリックしよう。<br>
+     　ブロックの命令通りに<font color="red">キャラクター</font>が動くよ。<br>
+     　<font color="red">キャラクター</font>が止まった時にしか、はたを取れないから注意してね。<br>
+     　実行中に実行ボタンをクリックすると、<font color="red">キャラクター</font>が一時ていしするよ。</p>
+
+  <p>④ステージ上の「はた」を全て取ると、「クリア！つぎのもんだいのちょうせん！」と表示され、ステージクリアとなるよ。<br>
+     　つぎのもんだいにどんどんちょうせんしてみよう！<br>
+     　ステージ上の「はた」を全て取れなかったり、<font color="red">キャラクター</font>が一度でも黒いマスに入ってしまった場合、<br>
+     　「しっぱい……もういちどちょうせん！」と表示され、ステージクリアしっぱいだよ。</p>
+
+  <h1><a name="partsDescription">部品説明</a></h1>
+  <table style="border: 1px solid; text-align: center;">
+    <tr style="border: 1px solid;">
+      <td style="border: 1px solid;">
+        <h3>実行ボタン</h3>
+      </td>
+      <td style="border: 1px solid;">
+        <img id="helpbtn" src="picture/markPlay.png" width="60" height="50" alt="">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        キャラクターがブロックの命令通りに動くよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td style="border: 1px solid;">
+        <h3>ステージせんたくボックス</h3>
+      </td>
+      <td style="border: 1px solid;">
+        <img src="picture/parts/selectstage.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        もともとあるステージやほぞんしたステージ、<br>
+        ダウンロードしたステージをえらぶところだよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td style="border: 1px solid;">
+        <h3>スピードチェンジボックス</h3>
+      </td>
+      <td style="border: 1px solid;">
+        <img src="picture/parts/speedchange.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        <font color="red">キャラクター</font>の実行スピードを変えることができるよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td style="border: 1px solid;">
+        <h3>ステージさくじょボックス</h3>
+      </td>
+      <td style="border: 1px solid;">
+        <img src="picture/parts/deletestage.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        ほぞんしたステージやダウンロードしたステージだけが表示されて、<br>
+        ステージをえらぶと消すことができるよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid; border: 1px solid;">
+      <td style="min-width: 270px; border: 1px solid;">
+        <h3>モードチェンジボタン</h3>
+      </td>
+      <td style="border: 1px solid;">
+        <img id="helpbtn" src="picture/tonkachi_hasami.png" width="60" height="50">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        プレイモードとクリエイトモードを変えるボタンだよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td style="border: 1px solid;">
+        <h3>ほぞんボタン</h3>
+      </td>
+      <td style="border: 1px solid;">
+        <img id="helpbtn" src="picture/test_print_mondaiyoushi.png" width="60" height="50">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        今表示しているステージをほぞんできるよ。<br>
+        ステージはステージせんたくボックスの一番後ろについかされるよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td style="border: 1px solid;">
+        <h3>アイテムせんたくボタン</h3>
+      </td>
+      <td style="border: 1px solid;">
+        <img id="helpbtn" src="picture/bunbougu_enpitsu.png" width="60" height="50">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        ステージに置けるアイテムが表示されるボタンだよ。<br>
+        アイテムをえらぶとマウスポインターがえらんだアイテムに変わるよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td style="border: 1px solid;">
+        <h3>ブロック数入力フィールド</h3>
+      </td>
+      <td style="border: 1px solid;">
+        <img src="picture/parts/useblock.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        使えるブロックの数をキーボードで入力する場所だよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td style="border: 1px solid;">
+        <h3>ダウンロードボタン</h3>
+      </td>
+      <td style="border: 1px solid;">
+        <img src="picture/parts/download.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        共有されたステージをダウンロードできるよ。<br>
+        えらんだステージはステージせんたくボックスの一番後ろについかされるよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td style="border: 1px solid;">
+        <h3>アップロードボタン</h3>
+      </td>
+      <td style="border: 1px solid;">
+        <img src="picture/parts/upload.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        今表示しているステージに名前をつけてステージを公開できるよ。<br>
+        ステージをアップロードするためには、ステージにはたを必ず置く、<br>
+        作ったステージをクリアする、使えるブロックの数を入力する、が条件だよ。<br>
+
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td style="border: 1px solid;">
+        <h3>アップロードしたステージを<br>さくじょするボタン</h3>
+      </td>
+      <td style="border: 1px solid;">
+        <img src="picture/parts/deleteupload.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        アップロードした自分のステージが全て表示されて<br>
+        ステージをえらぶと、ステージを消すことができるよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td style="border: 1px solid;">
+        <h3>キャラクターチェンジボタン</h3>
+      </td>
+      <td style="border: 1px solid;">
+        <img src="picture/parts/characterchange.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        使う<font color="red">キャラクター</font>のボタンをおすと、えらんだ<font color="red">キャラクター</font>に変わるよ。
+      </td>
+    </tr>
+  </table>
+  <h1><a name="blockDescription">ブロック説明</a></h1>
+  <table style="text-align: center; border: 1px solid;">
+    <tr style="border: 1px solid;">
+      <td style="min-width: 350px;border: 1px solid;">
+        <h3>メインブロック</h3>
+      </td>
+      <td width="200" style="border: 1px solid;">
+        <img src="picture/block/mainblock.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        メインブロックの中に組み込まれている<font color="lime">命令ブロック</font>が上からじゅんばんに実行されるよ。<br>
+        メインブロックに組み込まれていないブロックは実行されないよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td min-width="350" style="border: 1px solid;">
+        <h3>前に進むブロック</h3>
+      </td>
+      <td width="200" style="border: 1px solid;">
+        <img src="picture/block/frontmove.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        げんざいの進行方向に対して⬜︎マス前に進むよ。<br>
+        数字をクリックすることで1、2、3、4、8の数字の中からえらんだ数字のマス分前に進むよ。
+      </td>
+    </tr>
+    <!-- <tr>
+      <td min-width="350">
+        <h3>右に進むブロック：</h3>
+      </td>
+      <td width="200">
+        <img src="picture/block/rightmove.png">
+      </td>
+      <td>
+        <font color="red">キャラクター</font>の向きに対して⬜︎マス右に進むよ。<br>
+        数字をクリックすることで1、2、4、8の数字の中からえらんだ数字のマス分右に進むよ。
+      </td>
+    </tr> -->
+    <!-- <tr>
+      <td min-width="350">
+        <h3>後ろに下がるブロック：</h3>
+      </td>
+      <td width="200">
+        <img src="picture/block/behindmove.png">
+      </td>
+      <td>
+        <font color="red">キャラクター</font>の向きに対して⬜︎マス後ろに下がるよ。<br>
+        数字をクリックすることで1、2、4、8の数字の中からえらんだ数字のマス分後ろに下がるよ。
+      </td>
+    </tr> -->
+    <!-- <tr>
+      <td min-width="350">
+        <h3>左に進むブロック：</h3>
+      </td>
+      <td width="200">
+        <img src="picture/block/leftmove.png">
+      </td>
+      <td>
+        <font color="red">キャラクター</font>の向きに対して⬜︎マス左に進むよ。<br>
+        数字をクリックすることで1、2、4、8の数字の中からえらんだ数字のマス分前に左に進むよ。
+      </td>
+    </tr> -->
+    <tr style="border: 1px solid;">
+      <td min-width="350" style="border: 1px solid;">
+        <h3>右を向くブロック</h3>
+      </td>
+      <td width="200" style="border: 1px solid;">
+        <img src="picture/block/rightdirection.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        げんざいの進行方向に対して右に向くよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td min-width="350" style="border: 1px solid;">
+        <h3>後ろを向くブロック</h3>
+      </td>
+      <td width="200" style="border: 1px solid;">
+        <img src="picture/block/behinddirection.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        げんざいの進行方向に対して後ろを向くよ。
+    </tr>
+    <tr style="border: 1px solid;">
+      <td min-width="350" style="border: 1px solid;">
+        <h3>左を向くブロック</h3>
+      </td>
+      <td width="200" style="border: 1px solid;">
+        <img src="picture/block/leftdirection.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        げんざいの進行方向に対して左を向くよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td min-width="350" style="border: 1px solid;">
+        <h3>プログラム⬜︎を呼ぶブロック</h3>
+      </td>
+      <td width="200" style="border: 1px solid;">
+        <img src="picture/block/procedures.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        プログラム⬜︎ブロックで設定したブロックを呼ぶよ。<br>
+          ⬜︎には数字を設定し、設定した数字のプログラムを呼び出すよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td min-width="350" style="border: 1px solid;">
+        <h3>if（イフ）ブロック</h3>
+      </td>
+      <td width="200" style="border: 1px solid;">
+        <img src="picture/block/if.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        if(イフ)とは、「もし」という意味で、指定した方向のマスを調べて、<br>
+        前に「はた」や「「あな」がある場合にifブロックの中に組み込まれた<font color="lime">命令ブロック</font>の動作をするよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td min-width="350" style="border: 1px solid;">
+        <h3>if else（イフ エルス）ブロック</h3>
+      </td>
+      <td width="200" style="border: 1px solid;">
+        <img src="picture/block/ifelse.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        else(エルス)とは、「そうでなければ」という意味で、指定した方向のマスを調べて、<br>
+        前に「はた」や「あな」がない場合にelseブロックの中に組み込まれた<font color="lime">命令ブロック</font>の動作をするよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td min-width="350" style="border: 1px solid;">
+        <h3>条件式（じょうけんしき）ブロック</h3>
+      </td>
+      <td width="200" style="border: 1px solid;">
+        <img src="picture/block/ifconditions.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        ifブロック、if elseブロックの条件式部分に入れるブロックだよ。<br>
+        指定した方向に「ゆか」、「あな」、「はた」があるかどうかを判定するよ。
+      </td>
+    </tr>
+    <tr style="border: 1px solid;">
+      <td min-width="350" style="border: 1px solid;">
+        <h3>loop（ループ）ブロック</h3>
+      </td>
+      <td width="200" style="border: 1px solid;">
+        <img src="picture/block/roop.png">
+      </td>
+      <td style="border: 1px solid; text-align:left;">
+        loopブロックの中に組み込まれた<font color="lime">命令ブロック</font>を⬜︎回くりかえすよ。<br>
+        数字をクリックすることで1、2、3、4、8の数字の中から選んだ数字の回数くりかえすよ。
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
